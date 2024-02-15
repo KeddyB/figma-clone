@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react',
+import React, { useCallback, useState } from 'react'
 import LiveCursors from './cursor/LiveCursors'
 import { useMyPresence, useOthers } from '@/liveblocks.config';
 import CursorChat from './cursor/CursorChat';
