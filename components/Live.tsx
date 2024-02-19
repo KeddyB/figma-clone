@@ -48,6 +48,7 @@ const Live = () => {
           cursor={cursor}
           cursorState = {cursorState}
           setCursorState={setCursorState}
+          updateMyPresence={updateMyPresence}
         />
       )}
       <LiveCursors others = {others} />
