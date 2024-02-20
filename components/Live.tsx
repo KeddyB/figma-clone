@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import LiveCursors from './cursor/LiveCursors'
 import { useMyPresence, useOthers } from '@/liveblocks.config';
 import CursorChat from './cursor/CursorChat';
@@ -34,6 +34,16 @@ const Live = () => {
     updateMyPresence({cursor: {x, y}})
 
   }, [])
+
+  useEffect (() => {
+    const onKeyUp = (e: KeyboardEvent) => {
+      
+    }
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      
+    }
+  })
   return (
     <div
       onPointerMove={handlePointerMove}
