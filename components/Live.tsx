@@ -19,7 +19,11 @@ const Live = () => {
   const [reaction, setReaction] = useState<Reaction[]>([]);
 
   useInterval(() => {
-    if
+    if(cursorState.mode === CursorMode.Reaction && 
+      cursorState.isPressed && cursor
+    ) {
+      
+    }
   }, 100)
 
   const handlePointerMove = useCallback((event: React.PointerEvent) => {
