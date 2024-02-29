@@ -3,13 +3,13 @@ import styles from "./Avatar.module.css";
 
 const IMAGE_SIZE = 48;
 
-export function Avatar({ src, name }: { src: string; name: string }) {
+export function Avatar({ otherStyles, name }: { otherStyles: string; name: string }) {
   return (
-    <div className={styles.avatar} data-tooltip={name}>
+    <div className={`${styles.avatar} ${otherStyles} h-9 w-9`} data-tooltip={name}>
       <img
-        src={src}
-        height={IMAGE_SIZE}
-        width={IMAGE_SIZE}
+        src={`https://liveblocks.io/avatars/avatar-${Math.floor(Math.random() * 30)}.png`}
+        fill
+        alt={name}
         className={styles.avatar_picture}
       />
     </div>

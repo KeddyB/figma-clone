@@ -18,7 +18,7 @@ const ActiveUsers = () => {
 
         {users.slice(0, 3).map(({ connectionId, info }) => {
           return (
-            <Avatar key={connectionId} name={generateRandomName()} />
+            <Avatar key={connectionId} name={generateRandomName()} otherStyles="-ml-3" />
           );
         })}
 
